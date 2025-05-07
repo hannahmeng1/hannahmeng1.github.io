@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+Student Name: Hannah Meng 
+File Name: contact.html
+Today's Date: 4/27/25
+-->
+<html lang="en">
+<head>
+    <title>Contact Us - Whiskers Rescue Cafe</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Whiskers Rescue Cafe</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="content-container">
+        <h2>We'd love to hear from you!</h2>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <p>How did you hear about us?</p>
+            <input type="radio" id="social" name="referral" value="social">
+            <label for="social">Social Media</label><br>
+            <input type="radio" id="friend" name="refferal" value="friend">
+            <label for="friend">Friend</label><br><br>
+
+            <p>What are you interested in?</p>
+            <input type="checkbox" id="adopting" name="interest" value="adopting">
+            <label for="adopting">Adopting a cat</label><br>
+            <input type="checkbox" id="volenteering" name="interest" value="volenteering">
+            <label for="volenteering">Volenteering</label><br><br>
+
+            <label for="contact-time">Best time to contact you:</label>
+            <select id="contact-time" name="contact-time">
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="evening">Evening</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <h3>Meet Our Cafe Cats</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9EYZnSXEla0?si=qdiWaBb-v4uaIJA0&amp;start=5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Whiskers Rescue Cafe</p>
+    </footer>
+</body>
+</html>

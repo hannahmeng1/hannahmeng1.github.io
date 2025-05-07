@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+Student Name: Hannah Meng 
+File Name: index.html
+Today's Date: 4/27/25
+-->
+<html lang="en">
+<head>
+    <title>Whiskers Rescue Cafe</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Whiskers Rescue Cafe</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="adopt.html">Adopt</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-container">
+        <img src="Images\Cat Cafe Index IMG.jpg" alt="Adorable Cat" class="main-image">
+        <button onclick="showMessage()">Click to reveal a secret!</button>
+        <p id="secret-message" style="display: none; color: #4e3029; font-style: italic;">
+            Our cats love naps and tuna treats!
+        </p>
+        <p>We are a cozy cat cafe with a heart for rescue. Come visit us for a great coffee and even greater companionship!</p>
+        <p>Learn more about our <a href="adopt.html">adoption program</a>.</p>
+        <p>Questions? <a href="mailto:info@whiskerscafe.com">Email us!</a></p>
+
+        <p>Follow us on
+            <a href="https://www.instagram.com" target="_blank">Instagram</a> and
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Whiskers Rescue Cafe</p>
+    </footer>
+    <script>
+        function showMessage() {
+            document.getElementById("secret-message").style.display = "block";
+        }
+    </script>
+</body>
+</html>

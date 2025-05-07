@@ -1,0 +1,153 @@
+/*
+Author: Hannah Meng
+Date: 4/27/25
+File Name: styles.css
+*/
+
+/* Style rules for body and images */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #caadaa;
+    color: #000000;
+}
+
+header {
+    background-color: #5c3d34;
+    padding: 1em;
+    text-align: center;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #060606;
+}
+
+ul {
+    padding-left: 20px;
+    list-style-type: none;
+}
+
+.main-image {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content-container {
+    max-width: 800px;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.content-container ul {
+    list-style-type: none;
+    list-style-position: outside;
+    padding-left: 20px;
+    text-align: center;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Courgette&family=Great+Vibes&family=Indie+Flower&display=swap');
+#wrapper
+{
+position: absolute;
+top:20px;  
+left:33%;
+ }
+h1 {
+  font-family: 'Courgette', cursive;
+  text-align:center;  
+  font-size:34pt;
+  color: #0b0a09;
+}
+
+/* (A) TABS CONTAINER */
+.tab, .tab * {
+  border-radius:12px 12px 0px 0px;
+  margin: 20px auto;
+  font-family: 'Indie Flower', cursive;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+.tab { max-width: 800px; }
+.tab input { display: none; }
+
+/* (B) HIDE CHECKBOX */
+
+/* (C) TAB LABEL */
+.tab label {
+  /* (C1) DIMENSIONS */
+  position: relative; /* required for (f2) position:absolute */
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: 'Cookie', cursive;
+  font-size:20pt;
+  top:15px;
+
+ 
+  /* (C2) COSMETICS */
+
+  color: #040304;
+  background: #5c3d34;
+  cursor: pointer;
+}
+
+/* (D) TAB CONTENT - HIDDEN BY DEFAULT */
+/* css animation will not work with auto height */
+/* this is why we use max-height instead */
+.tab .content {
+  background: #caadaa;
+  overflow: hidden;
+  transition: max-height 2s;
+  max-height: 0;
+
+  border-radius:0px 0px 12px 12px;
+  }
+.tab .content p { padding: 5px; }
+
+/* (E) OPEN TAB ON CHECKED */
+.tab input:checked ~ .content { max-height: 100vh; }
+
+/* (F) EXTRA - ADD ARROW INDICATOR */
+.tab label::after {
+  /* (F1) RIGHT ARROW */
+  display: block;  
+  content: "\25b6";
+ 
+  /* (F2) PLACE AT RIGHT SIDE */
+  position: absolute;
+  right: 10px; 
+  top: 10px;
+  color:#090809;
+ 
+  /* (F3) ANIMATED ARROW */
+  transition: all 0.4s;
+}
+ 
+/* (F4) ROTATE ARROW ON CHECKED */
+.tab input:checked ~ label::after { transform: rotate(90deg); }
+
+
+footer {
+    background-color: #5c3d34;
+}
+
+/* Media query for mobile */
+@media (max-width: 600px) {
+    body {
+        background-color: #fbeee0;
+        font-size: 16px;
+    }
+}
